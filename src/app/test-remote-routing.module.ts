@@ -4,7 +4,7 @@ import { APP_ROUTES } from './routes';
 
 
 @NgModule({
-    imports: [RouterModule.forRoot(APP_ROUTES)],
-    exports: [RouterModule]
+  imports: [RouterModule.forChild(APP_ROUTES)],
+  exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class TestRemoteRoutingModule { }
