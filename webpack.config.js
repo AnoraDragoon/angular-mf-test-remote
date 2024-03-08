@@ -1,15 +1,17 @@
 const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
 
 module.exports = withModuleFederationPlugin({
-
-  name: 'test-remote',
+  name: "test-remote",
 
   exposes: {
-    './Module': './src/app/test-remote.module.ts',
+    "./Module": "./src/app/test-remote.module.ts",
   },
 
   shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    ...shareAll({
+      singleton: true,
+      strictVersion: true,
+      requiredVersion: "auto",
+    }),
   },
-
 });
